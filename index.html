@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#1746d1">
+  <title>TikTok Archive — THE BOYZ ARCHIVE</title>
+  <meta name="description" content="Fan-made archive of THE BOYZ TikTok videos.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main id="top">
+    <header class="masthead">
+      <div class="utility">
+        <a class="brand" href="https://tbzarchive1206.github.io/tbzarchive/">THE BOYZ / FAN ARCHIVE</a>
+        <nav>
+          <a href="https://tbzarchive1206.github.io/tbzarchive/" data-i18n="mainPage">MAIN PAGE</a>
+          <span>/</span>
+          <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language">EN</button>
+        </nav>
+      </div>
+
+      <h1><span class="solid">TIKTOK</span><span class="outline">ARCHIVE</span></h1>
+
+      <div class="stats">
+        <p><strong id="totalVideos">0</strong> <span data-i18n="videos">VIDEOS</span></p>
+        <i></i>
+        <p><strong id="totalAccounts">05</strong> <span data-i18n="accounts">ACCOUNTS</span></p>
+        <i></i>
+        <p><strong id="yearRange">2019—2026</strong> <span data-i18n="years">YEARS</span></p>
+      </div>
+    </header>
+
+    <section class="controls" aria-label="Archive filters">
+      <div class="section-label filter-label">
+        <h2 data-i18n="filters">FILTERS</h2>
+        <span>TIKTOK / VIDEO ARCHIVE</span>
+      </div>
+
+      <div class="filter-grid">
+        <label>
+          <span data-i18n="account">ACCOUNT</span>
+          <select id="accountFilter">
+            <option value="all" data-i18n="allAccounts">ALL ACCOUNTS</option>
+            <option value="istent_theboyz">istent_theboyz</option>
+            <option value="theboyz_officl">theboyz_officl</option>
+            <option value="jakeybaee2">jakeybaee2</option>
+            <option value="kebean.moon">kebean.moon</option>
+            <option value="eric.sohn22">eric.sohn22</option>
+          </select>
+        </label>
+
+        <label>
+          <span data-i18n="member">MEMBER</span>
+          <select id="memberFilter">
+            <option value="all" data-i18n="allMembers">ALL MEMBERS</option>
+            <option value="Sangyeon">Sangyeon</option>
+            <option value="Jacob">Jacob</option>
+            <option value="Younghoon">Younghoon</option>
+            <option value="Hyunjae">Hyunjae</option>
+            <option value="Juyeon">Juyeon</option>
+            <option value="Kevin">Kevin</option>
+            <option value="Q">Q</option>
+            <option value="Sunwoo">Sunwoo</option>
+            <option value="Eric">Eric</option>
+          </select>
+        </label>
+
+        <label>
+          <span data-i18n="year">YEAR</span>
+          <select id="yearFilter">
+            <option value="all" data-i18n="allYears">ALL YEARS</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+          </select>
+        </label>
+
+        <label>
+          <span data-i18n="sort">SORT</span>
+          <select id="sortFilter">
+            <option value="newest" data-i18n="newest">NEWEST FIRST</option>
+            <option value="oldest" data-i18n="oldest">OLDEST FIRST</option>
+          </select>
+        </label>
+
+        <button class="reset-button" id="resetFilters" type="button" data-i18n="reset">RESET</button>
+      </div>
+    </section>
+
+    <section class="archive-section">
+      <div class="results-head">
+        <span id="resultsLabel">0 VIDEOS</span>
+        <span id="activeFilters" aria-live="polite"></span>
+      </div>
+
+      <div class="video-grid" id="videoGrid"></div>
+
+      <div class="empty" id="empty" hidden>
+        <strong>00</strong>
+        <span data-i18n="empty">TRY CHANGING THE FILTERS.</span>
+      </div>
+
+      <button class="load-more" id="loadMore" type="button" data-i18n="loadMore">LOAD MORE ↓</button>
+    </section>
+
+    <footer>
+      <a href="https://tbzarchive1206.github.io/tbzarchive/">← <span data-i18n="mainArchive">MAIN ARCHIVE</span></a>
+      <a href="#top"><span data-i18n="backTop">BACK TO TOP</span> ↑</a>
+    </footer>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
